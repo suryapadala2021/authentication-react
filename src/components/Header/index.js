@@ -5,7 +5,7 @@ const Header = () => (
     <img
       src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
       alt="website logo"
-      className="nav-logo"
+      className="nav-logo-lg "
     />
     <div className="nav-logo-container">
       <img
