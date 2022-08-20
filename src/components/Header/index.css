@@ -1,1 +1,63 @@
 /* Write your CSS code here */
+.nav-logo {
+  width: 90px;
+}
+
+.nav-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.nav-logout-logo {
+  width: 22px;
+}
+.nav-home-logo {
+  width: 18px;
+}
+.nav-items {
+  background-color: #e6f6ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.nav-items-lg {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+  .nav-item-lg {
+    font-family: 'Roboto';
+    color: #64748b;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .nav-items-lg {
+    display: flex;
+    align-items: center;
+  }
+  .nav-logout-logo {
+    display: none;
+  }
+  .nav-logo-container {
+    display: none;
+  }
+  .nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-btn-lg {
+    background-color: #0b69ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 55px;
+    font-size: 9px;
+    font-weight: 800;
+  }
+}

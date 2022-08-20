@@ -22,7 +22,7 @@
     }
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": 0,
     "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
     "react/state-in-constructor": "off",
     "react/react-in-jsx-scope": "off",
@@ -48,6 +48,7 @@
         "ignorePureComponents": true
       }
     ],
+
     "no-unused-vars": "warn",
     "jsx-a11y/alt-text": 1,
     "react/no-unused-state": "warn",

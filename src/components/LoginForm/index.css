@@ -93,3 +93,9 @@
     padding: 40px;
   }
 }
+.failure-status {
+  font-family: 'Roboto';
+  color: red;
+  font-size: 12px;
+  text-align: left;
+}

@@ -2,7 +2,7 @@ import {Component} from 'react'
 import './index.css'
 
 class LoginForm extends Component {
-  state = {username: '', password: '', resultLogin: ''}
+  state = {username: '', password: '', result: ''}
 
   onChangeUsername = event => {
     this.setState({username: event.target.value})
@@ -26,6 +26,7 @@ class LoginForm extends Component {
     }
     const response = await fetch(url, options)
     const data = await response.json()
+
     if (response.ok === true) {
       console.log('success')
     } else {
@@ -74,7 +75,7 @@ class LoginForm extends Component {
   }
 
   render() {
-      const {resultLogin}=this.state
+    const {result} = this.state
     return (
       <div className="bg-container">
         <div className="responsive-box-lg">
@@ -104,8 +105,8 @@ class LoginForm extends Component {
               <button type="submit" className="submit-btn">
                 Login
               </button>
+              <p className="failure-status">{result}</p>
             </form>
-           <p >{resultLogin}</p>
           </div>
         </div>
       </div>
