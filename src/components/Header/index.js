@@ -36,12 +36,12 @@ const Header = () => (
         className="nav-home-logo"
       />
     </nav>
-    <nav className="nav-items-lg">
-      <p className="nav-item-lg">Home</p>
-      <p className="nav-item-lg">Product</p>
-      <p className="nav-item-lg">Cart</p>
-      <button className="nav-btn-lg">Logout</button>
-    </nav>
+    <ul className="nav-items-lg">
+      <li className="nav-item-lg">Home</li>
+      <li className="nav-item-lg">Products</li>
+      <li className="nav-item-lg">Cart</li><li>
+      <button type="button" className="nav-btn-lg">Logout</button></li>
+    </ul>
   </div>
 )
 export default Header

@@ -45,6 +45,8 @@
   .nav-items-lg {
     display: flex;
     align-items: center;
+    list-style-type:none;
+    padding-left:0px
   }
   .nav-logout-logo {
     display: none;

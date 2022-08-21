@@ -1,1 +1,88 @@
 /* Write your CSS code here */
+.home-box-heading {
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-size: 28px;
+}
+.cloths-get-you-noticed-img-small {
+  height: 170px;
+  width: 170px;
+  margin-bottom:15px;
+}
+.cloths-get-you-noticed-img-lg{
+ display:none;
+}
+.home-box-description{
+    font-family:"Roboto";
+    color:#64748b;
+    font-size:12px;
+}
+.home-box{
+    text-align:center;
+    padding:20px
+}
+.shop-now-btn{
+    border:none;
+    border-radius:5px;
+    background-color:#0967d2;
+    color:white;
+    height:27px;
+    width:130px;
+    font-size:12px;
+}
+@media screen and (min-width:768px){
+    .cloths-get-you-noticed-img-small {
+  display:none;
+}
+.home-box-heading {
+  font-size: 30px;
+}
+.cloths-get-you-noticed-img-lg{
+ display:inline;
+ height: 250px;
+  width: 250px;
+ 
+}
+.home-box{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:30px
+}
+.home-container{
+    width:80%;
+    max-width:1000px
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+.home-box-lg-text-container{
+    text-align:left;
+    width:40%;
+}
+.home-box-description{
+   
+    font-size:14px;
+}
+.shop-now-btn{
+   
+    height:30px;
+    width:100px;
+    
+}
+}
+@media screen and (min-width:1000px){
+    .cloths-get-you-noticed-img-lg{
+ height: 320px;
+  width: 320px;
+}
+.home-box-heading {
+  font-size: 34px;
+}
+.home-box-description{
+   
+    font-size:16px;
+}
+}

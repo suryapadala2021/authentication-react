@@ -26,11 +26,13 @@ class LoginForm extends Component {
     }
     const response = await fetch(url, options)
     const data = await response.json()
-
     if (response.ok === true) {
-      console.log('success')
+        this.setState({result:""})
+      const{history}=this.props
+      history.replace("/")
     } else {
-      this.setState({result: data.error_msg})
+      this.setState({result: `* ${data.error_msg}`})
+      
     }
   }
 
@@ -58,7 +60,7 @@ class LoginForm extends Component {
     const {password} = this.state
     return (
       <div className="login-input-box">
-        <label className="login-label" htmlFor="userName">
+        <label className="login-label" htmlFor="userPass">
           PASSWORD
         </label>
         <br />
@@ -66,8 +68,8 @@ class LoginForm extends Component {
           onChange={this.onChangepass}
           placeholder="Password"
           className="login-user-input"
-          type="text"
-          id="userName"
+          type="password"
+          id="userPass"
           value={password}
         />
       </div>
